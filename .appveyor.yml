@@ -8,7 +8,7 @@ branches:
 build: off
 
 install:
-  - ps: $App = Start-Process -FilePath java -ArgumentList "-jar ./artifacts/app-order.jar" -PassThru
+  - ps: $App = Start-Process -FilePath java -ArgumentList "-jar /artifacts/app-order.jar" -PassThru
 
 build_script:
   - ps: ./gradlew test --info "-Dselenide.headless=true"
